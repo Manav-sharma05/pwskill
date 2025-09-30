@@ -1,0 +1,98 @@
+.hover-me{
+            padding: 20px;
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+             transition: background 2s, transform 2s;
+        }
+        .hover-me:hover{
+            background: yellowgreen;
+            transform: scale(1.2);
+        }
+
+
+        .card{
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow:0 0px 5px rgba(0,0,  0, 0.1);
+            transition: box-shadow 1s transform 2s;
+        }
+        .card:hover{
+            box-shadow:0  0px 5px rgba(0,0,  0, 0.1);
+            transform: translatex(-20);
+        }
+
+        .button{
+            padding:12px 28px;
+            border:none ;
+            border-radius:50px ;
+            font-size: 16px;
+            color: black;
+          background: linear-gradient(90deg,white,red);
+          transition: opacity 1s;
+          
+        }
+        .button:hover{
+            opacity: 0.10;
+        }
+
+
+    .btn{
+        padding: 12px 24px;
+        border: 2px solid#333;
+        background-color: transparent;
+        color: #333;
+        border-radius: 6px;
+        transition: all 0.3s;
+    }
+    .btn:hover{
+        background-color: black;
+        color: azure;
+    }
+
+    .search{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        background-color: blueviolet;
+        font-size: 16px;
+        transition: all 0.5s;
+        
+
+    }
+    .search:hover{
+        transform: scale(1.4);
+    }
+
+
+    .loading{
+        background-color: rgb(168, 213, 168);
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+    .loading::after{
+        content: "";
+        width: 18px;
+        height: 18px;
+        border: 3px solid white;
+        border-top: 3px solid transparent;
+        border-radius: 50%;
+        animation: spin 
+        8s linear infinite;
+
+    }
+    @keyframes spin{
+        to{
+            transform: rotate(360deg);
+        }
+    }
